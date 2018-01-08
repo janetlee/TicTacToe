@@ -1,0 +1,32 @@
+High Level Requirements
+/*
+Buttons for HTML UI
+Grid is 9 buttons and they start off blank. Each button can have a label X or O state toggled or back to blank
+Submit button ends finishing a turn invokes current player change.
+board: {1: null, 2: null: 3: null, 4: null, 5: null: 6: null, 7: null, 8: null: 9: null}
+*/
+
+
+CurrentPlayer: X or O
+board array: [[1,2,3],[4,5,6],[7,8,9]]
+
+endTurn function toggles currentPlay to X or O based on whose turn it is.
+togglePiece function receiving X or O based on whose turn it is.
+untogglePiece function returns piece back to the original number?
+displayBoard function renders board onto the screen
+
+checkboard function receiving X or O, invoking, horiz/vert/diag checks
+horizontalCheck function
+  1,2,3
+  4,5,6
+  7,8,9
+verticalCheck:
+  checks for 1,4,7
+  2,5,8
+  3,6,9
+
+diagonalCheck
+  1,5,9
+  3,5,7
+
+How to declare a tie and end the game?
